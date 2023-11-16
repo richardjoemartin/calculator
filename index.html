@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <table class="calculator">
+        <tr>
+            <th class="input" colspan="4"><input id="result" type="text"></th>
+        </tr>
+
+        <tr>
+            <td><button class="number" onclick="displaynumber(7)">7</button></td>
+            <td><button class="number" onclick="displaynumber(8)">8</button></td>
+            <td><button class="number" onclick="displaynumber(9)">9</button></td>
+            <td><button class="signs" onclick="displaynumber('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="number" onclick="displaynumber(4)">4</button></td>
+            <td><button class="number" onclick="displaynumber(5)">5</button></td>
+            <td><button class="number" onclick="displaynumber(6)">6</button></td>
+            <td><button class="signs" onclick="displaynumber('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="number" onclick="displaynumber(1)">1</button></td>
+            <td><button class="number" onclick="displaynumber(2)">2</button></td>
+            <td><button class="number" onclick="displaynumber(3)">3</button></td>
+            <td><button class="signs" onclick="displaynumber('*')">&#215;</button></td>
+        </tr>
+        <tr>
+            <td><button class="number" onclick="displaynumber(0)">0</button></td>
+            <td><button class="number" onclick="displaynumber('00')">00</button></td>           
+            <td><button class="number" onclick="displaynumber('.')">.</button></td>
+            <td><button class="signs" onclick="displaynumber('/')">&#247;</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="clearBox()" class="number ac">AC</button></td>
+            <td><button class="sig"  onclick="removelasitem()">DEL</button></td>
+            <td colspan="2"><button onclick="evaluateOperator()" class="equal">=</button></td>
+        </tr>
+
+
+    </table>
+</body>
+<script src="./script.js"></script>
+
+</html>
